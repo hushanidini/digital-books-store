@@ -21,7 +21,7 @@ export const Navbar = () => {
   if (!mounted) return null;
 
   return (
-    <>
+     <div className="container mx-auto px-3 ">
       <nav className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/60">
         <div className="container flex h-16 items-center justify-between px-4 md:px-8">
           {/* Logo */}
@@ -53,6 +53,6 @@ export const Navbar = () => {
 
       {/* Cart Sheet */}
       <CartSheet open={isCartOpen} onOpenChange={setIsCartOpen} />
-    </>
+    </div>
   );
 };
