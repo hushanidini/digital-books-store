@@ -1,8 +1,7 @@
-
-import { create } from 'zustand';
-import { persist, createJSONStorage } from 'zustand/middleware';
-import { Book, CartItem, CartStore } from '@/types';
-import { useEffect, useState } from 'react';
+import { create } from "zustand";
+import { persist, createJSONStorage } from "zustand/middleware";
+import { Book, CartStore } from "@/types";
+import { useEffect, useState } from "react";
 
 /**
  * Cart Store using Zustand with localStorage persistence
@@ -88,7 +87,7 @@ export const useCartStore = create<CartStore>()(
       },
     }),
     {
-      name: 'cart-storage', // localStorage key
+      name: "cart-storage", // localStorage key
       storage: createJSONStorage(() => localStorage),
     }
   )

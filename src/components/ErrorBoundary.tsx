@@ -43,7 +43,7 @@ export class ErrorBoundary extends Component<Props, State> {
                                 Component Error
                             </h3>
                             <p className="text-sm text-muted-foreground mb-3">
-                                This component encountered an error and couldn't be displayed.
+                                {"This component encountered an error and couldn't be displayed."}
                             </p>
                             {process.env.NODE_ENV === 'development' && this.state.error && (
                                 <pre className="text-xs bg-muted p-2 rounded mb-3 overflow-auto">

@@ -15,7 +15,7 @@ export default function NotFound() {
                     <CardTitle className="text-4xl font-bold mb-2">404</CardTitle>
                     <CardTitle className="text-2xl">Page Not Found</CardTitle>
                     <CardDescription className="text-base mt-2">
-                        The page you're looking for doesn't exist or has been moved.
+                        {`The page you're looking for doesn't exist or has been moved.`}
                     </CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -28,11 +28,11 @@ export default function NotFound() {
                             </li>
                             <li className="flex items-start gap-2">
                                 <span className="text-primary mt-0.5">•</span>
-                                <span>Return to the homepage and browse our catalog</span>
+                                <span>{`Return to the homepage and browse our catalog`}</span>
                             </li>
                             <li className="flex items-start gap-2">
                                 <span className="text-primary mt-0.5">•</span>
-                                <span>Use the search feature to find what you're looking for</span>
+                                <span>{`Use the search feature to find what you're looking for`}</span>
                             </li>
                         </ul>
                     </div>
